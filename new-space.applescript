@@ -51,9 +51,13 @@ on move_new_space()
             end if
             set i to i + 1
         on error
-            set new_space_num to i+1
             exit repeat
         end try
+        tell application id "com.apple.systemevents"
+            tell list 1 of group 2 of group 1 of group 1 of process "Dock"
+                set new_space_num to count of buttons
+            end tell
+        end tell
     end repeat
     -- move new space to right of current space
     tell application id "com.apple.systemevents"
@@ -67,10 +71,10 @@ on move_new_space()
             tell button current_space_num of list 1 of group 2 of group 1 of group 1
                 set p to position
                 set s to size
-                set x2 to {(item 1 of item 1 of p) + (item 1 of item 1 of s)} as integer
+                set x2 to {(item 1 of item 1 of p) + (item 1 of item 1 of s)*0.8} as integer
                 set y2 to {(item 2 of item 1 of p) + (item 2 of item 1 of s) / 2} as integer
             end tell
-            do shell script "/opt/homebrew/bin/cliclick -e 10 -w 300 m:" & x1 & "," & y1 & " dd:" & x1 & "," & y1 & " dm:" & x2 & "," & y2 & " du:" & x2 & "," & y2 & " kp:esc"
+            do shell script "/opt/homebrew/bin/cliclick -e 50 -w 500 m:" & x1 & "," & y1 & " dd:" & x1 & "," & y1 & " dm:" & x2 & "," & y2 & " du:" & x2 & "," & y2 & " kp:esc"
         end tell
     end tell
 end move_new_space
