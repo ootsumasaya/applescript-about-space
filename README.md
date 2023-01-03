@@ -36,3 +36,8 @@ Raycast accessibility permissions only.
 1. Register to Raycast  
 Setting>Extensions>Script Commands>Add Directories
 1. push alt-space and type script name which you want to do
+
+## References
+- https://apple.stackexchange.com/questions/407422/create-a-new-space-using-a-keyboard-shortcut-in-macos-big-sur
+- https://qiita.com/tororu/items/512100b563956f723286
+- https://stackoverflow.com/questions/66892255/how-to-write-applescript-to-that-closes-a-desktop-space
