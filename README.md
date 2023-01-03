@@ -22,7 +22,7 @@ alt-space -> type "move-space [number of space to move] [number of destination s
 
 ## Apps to be used
 - [cliclick](https://github.com/BlueM/cliclick)
-- Raycast](https://www.raycast.com)
+- [Raycast](https://www.raycast.com)
 Other launcher apps are fine, as long as they can register scripts and take arguments when executed.
 
 ## Required permissions
