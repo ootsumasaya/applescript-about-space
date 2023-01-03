@@ -22,12 +22,12 @@ alt-space -> type "move-space [number of space to move] [number of destination s
 
 ## Apps to be used
 - [cliclick](https://github.com/BlueM/cliclick)
-- [Raycast](https://www.raycast.com)
+- [Raycast](https://www.raycast.com)  
 Other launcher apps are fine, as long as they can register scripts and take arguments when executed.
 
 ## Required permissions
 Raycast accessibility permissions only.
-(No need to disable Filesystem Protections, etc.). (You do not need to disable Filesystem Protections, etc., as Apple tends to emphasize security over functionality, so it may stop working after an update, etc.)
+(No need to disable Filesystem Protections, etc.. But Apple tends to emphasize security over functionality, so it may stop working after an update.)
 
 
 ## Usage
