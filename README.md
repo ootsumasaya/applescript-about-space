@@ -41,3 +41,6 @@ Setting>Extensions>Script Commands>Add Directories
 - https://apple.stackexchange.com/questions/407422/create-a-new-space-using-a-keyboard-shortcut-in-macos-big-sur
 - https://qiita.com/tororu/items/512100b563956f723286
 - https://stackoverflow.com/questions/66892255/how-to-write-applescript-to-that-closes-a-desktop-space
+
+--- 
+Bug reports, pull requests, advice, etc. are welcome!
